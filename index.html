@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nayla de ituzaingo wacho vos sabes 💙</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Animación de entrada */
+.contenedor {
+    margin-top: 80px;
+    animation: aparecer 2s ease;
+}
+
+@keyframes aparecer {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* Contenedor de imágenes */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Estilo de imágenes */
+.galeria img {
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+    <h1>Para nayla la wachina junior 💙</h1>
+    <p>Hacé click en las imágenes perri 😏</p>
+
+    <div class="galeria">
+        <img src="https://i.imgur.com/6RLz7rB.png" onclick="mensaje1()">
+        <img src="https://i.imgur.com/QIrZWGIs.jpg" onclick="mensaje2()">
+    </div>
+</div>
+
+<script>
+function mensaje1() {
+    alert("Si entraste a esta parte es porque soy el mejor en todo 💙");
+}
+
+function mensaje2() {
+    alert("Y si entraste a esta otra es porque yo soy la puta maquina 😎✨");
+}
+</script>
+
+</body>
+</html>
